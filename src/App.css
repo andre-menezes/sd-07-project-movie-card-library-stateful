@@ -22,7 +22,9 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-start;
   padding: 48px 30px;
+  width: 90%;
 }
 
 .movie-card {
@@ -36,7 +38,6 @@ body {
   overflow: hidden;
   width: 300px;
 }
-
 
 .movie-card-image {
   width: 100%;
@@ -72,6 +73,8 @@ body {
   font-size: 16px;
   font-weight: 700;
   padding: 3px 9px;
+  text-align: center;
+  width: 50px;
 }
 
 .movie-card-rating {
@@ -80,4 +83,83 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 30px 20px;
+}
+
+.form-bottom {
+  flex-direction: column;
+}
+
+.form-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin: 3px 0 5px;
+  padding: 0 10px;
+  width: 500px;
+}
+
+.form-textarea {
+  height: 100px;
+  padding-top: 5px;
+}
+
+.form-rating {
+  padding-left: 10px;
+  width: 100px;
+}
+
+.form-select {
+  background-color: white;
+  border: 1px solid #aaa;
+  height: 26px;
+  width: 100px;
+}
+
+.form-button {
+  background-color: #007bff;
+  border-radius: 30px;
+  color: white;
+  height: 30px;
+  width: 200px;
+}
+
+.form-searchbar {
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.search-input {
+  margin: 0 10px;
+  width: 300px;
+}
+
+.movie-library {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-checkbox {
+  margin: 0 10px;
+}
+
+.searchbar-select {
+  margin-left: 10px;
 }

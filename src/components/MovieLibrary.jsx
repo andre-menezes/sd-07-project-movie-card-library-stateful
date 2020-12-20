@@ -44,9 +44,11 @@ class MovieLibrary extends React.Component {
 
     // filtra pelo que foi digitado no input (seja no título, subtítulo ou sinopse)
     if (searchText) {
-      movieFilter = movieFilter.filter((movie) => movie.title.includes(searchText) ||
-        movie.subtitle.includes(searchText) ||
-        movie.storyline.includes(searchText),
+      movieFilter = movieFilter.filter(
+        (movie) =>
+          movie.title.includes(searchText) ||
+          movie.subtitle.includes(searchText) ||
+          movie.storyline.includes(searchText),
       );
     }
 
@@ -57,7 +59,9 @@ class MovieLibrary extends React.Component {
 
     // filtra por gênero
     if (selectedGenre) {
-      movieFilter = movieFilter.filter((movie) => movie.genre === selectedGenre);
+      movieFilter = movieFilter.filter(
+        (movie) => movie.genre === selectedGenre,
+      );
     }
 
     return movieFilter;
@@ -65,7 +69,7 @@ class MovieLibrary extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="movie-library">
         <SearchBar
           searchText={this.state.searchText}
           bookmarkedOnly={this.state.bookmarkedOnly}
