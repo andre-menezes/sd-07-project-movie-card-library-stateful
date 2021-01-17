@@ -125,6 +125,7 @@ class AddMovie extends React.Component {
         </div>
 
         <button
+          type="submit"
           data-testid="send-button"
           onClick={this.handleClick}
           className="form-button"
